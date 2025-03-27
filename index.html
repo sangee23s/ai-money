@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI MONEY GROWTH MASTERPLAN</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .container {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    transition: transform 0.3s ease-in-out;
+  }
+  .container:hover {
+    transform: translateY(0px);
+  }
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  label {
+    font-weight: bold;
+    color: #555;
+    margin-top: 10px;
+    display: block;
+  }
+  input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+  }
+  input:focus, select:focus, textarea:focus {
+    border-color: #ff4b2b;
+    box-shadow: 0 0 10px rgba(255, 75, 43, 0.3);
+    outline: none;
+  }
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  .submit-btn {
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  .submit-btn:hover {
+    background: linear-gradient(90deg, #ff4b2b, #ff416c);
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(255, 75, 43, 0.3);
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>🔥 Hidden Wealth Audit – AI Finds What’s Stopping You from Getting Rich</h2>
+  <form action="https://formspree.io/f/xleqlqvk" method="post">
+    
+    <label for="name">👤 Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">📧 Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="age">🎂 Age:</label>
+    <input type="number" id="age" name="age" required>
+
+    <label for="country">🌍 Country:</label>
+    <input type="text" id="country" name="country" required>
+
+    <label for="occupation">💼 Your Occupation:</label>
+    <select id="occupation" name="occupation" required>
+      <option value="Employee">Employee</option>
+      <option value="Freelancer">Freelancer</option>
+      <option value="Business Owner">Business Owner</option>
+      <option value="Student">Student</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="income">💰 Monthly Income:</label>
+    <input type="number" id="income" name="income" required>
+
+    <label>📉 Where does your money go every month?</label>
+
+    <label for="rent">🏠 Rent/EMI:</label>
+    <input type="number" id="rent" name="rent" oninput="calculateTotal()">
+
+    <label for="food">🍽️ Food & Groceries:</label>
+    <input type="number" id="food" name="food" oninput="calculateTotal()">
+
+    <label for="transport">🚕 Transport:</label>
+    <input type="number" id="transport" name="transport" oninput="calculateTotal()">
+
+    <label for="shopping">🛍️ Shopping & Entertainment:</label>
+    <input type="number" id="shopping" name="shopping" oninput="calculateTotal()">
+
+    <label for="other">🔄 Other Expenses:</label>
+    <input type="number" id="other" name="other" oninput="calculateTotal()">
+
+    <label for="total-expenses">📌 Total Monthly Expenses:</label>
+    <input type="number" id="total-expenses" name="total-expenses" readonly>
+
+    <label for="debt">📉 Current Debt/EMI:</label>
+    <input type="number" id="debt" name="debt">
+
+    <label for="savings">💰 Savings per Month:</label>
+    <input type="number" id="savings" name="savings">
+
+    <label for="struggles">🚨 Biggest Financial Struggle:</label>
+    <select id="struggles" name="struggles" required>
+      <option value="Too many loans">Too many loans/EMIs</option>
+      <option value="No savings">Earning but not saving anything</option>
+      <option value="Don’t know where to invest">Don’t know where to invest</option>
+      <option value="Expenses more than income">Expenses are always more than income</option>
+      <option value="Want to earn more">Want to earn more but don’t know how</option>
+    </select>
+
+
+   
+
+
+    <label for="message">📌 Additional Comments:</label>
+    <textarea id="message" name="message" placeholder="Any other financial concerns..."></textarea>
+
+    <h2>🚀 GET YOUR AI-GENERATED MONEY GROWTH PLAN</h2>
+    <p>💡 Receive your personalized plan in just 15 minutes via email!</p>
+
+    <button type="submit" class="submit-btn">🚀 Get Your Personalized Plan</button>
+
+  </form>
+</div>
+
+<script>
+  function calculateTotal() {
+    let rent = parseFloat(document.getElementById("rent").value) || 0;
+    let food = parseFloat(document.getElementById("food").value) || 0;
+    let transport = parseFloat(document.getElementById("transport").value) || 0;
+    let shopping = parseFloat(document.getElementById("shopping").value) || 0;
+    let other = parseFloat(document.getElementById("other").value) || 0;
+    let total = rent + food + transport + shopping + other;
+    document.getElementById("total-expenses").value = total;
+  }
+</script>
+
+</body>
+</html>
